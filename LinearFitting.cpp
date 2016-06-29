@@ -5,7 +5,7 @@
 bool LinearFitting::CurveFitting(const std::vector<D_Point> &src_points,
                                  std::vector<D_Point> &dst_points) {
 
-  if (src_points.size() <= 2) {
+  if (src_points.size() < 2) {
     assert(false);
     return false;
   }
@@ -33,6 +33,9 @@ bool LinearFitting::CurveFitting(const std::vector<D_Point> &src_points,
     }  else {
       dst_points.insert(dst_points.end(), fitting_points.begin(), fitting_points.end());
     }
+  }
+  if (src_points.size() == 2) {
+    dst_points = src_points;
   }
   return true;
 }

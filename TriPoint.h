@@ -1,3 +1,6 @@
+#ifndef FITTINGMETHOD_TRIPOINT_H__
+#define FITTINGMETHOD_TRIPOINT_H__
+
 class TriPoint {
  public:
   TriPoint(double x = 0., double y = 0., double z = 0.);
@@ -20,3 +23,5 @@ class TriPoint {
   double z_;
  
 }; // class TriPoint
+
+#endif // FITTINGMETHOD_TRIPOINT_H__

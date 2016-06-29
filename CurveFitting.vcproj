@@ -111,6 +111,7 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories="D:\code\MyJob\CurveFitting\CurveFitting"
 				RuntimeLibrary="2"
 				WarningLevel="3"
 				Detect64BitPortabilityProblems="true"
@@ -165,7 +166,7 @@
 			Name="GCode"
 			>
 			<File
-				RelativePath=".\GCode\GCodeType.h"
+				RelativePath=".\GCode\GCodeDefinition.h"
 				>
 			</File>
 			<File

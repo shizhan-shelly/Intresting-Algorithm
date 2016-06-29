@@ -92,8 +92,8 @@ D_Point ParseGCode::GetTracePoint(const std::string &code) {
     y_index++;
   }
 
-  std::string x_value = code.substr(x_index);
   char *ptr;
+  std::string x_value = code.substr(x_index);
   double x = strtod(x_value.c_str(), &ptr);
 
   std::string y_value = code.substr(y_index);
@@ -116,10 +116,10 @@ std::string ParseGCode::GCodeGenerate(GCodeType g_type, D_Point point) {
   char buf[100];
   switch (g_type) {
    case G00:
-    sprintf(buf, "G00X%.3fY%.3f\n", point.x(), point.y());
+    sprintf_s(buf, "G00X%.3fY%.3f\n", point.x(), point.y());
     break;
    case G01:
-    sprintf(buf, "G01X%.3fY%.3f\n", point.x(), point.y());
+    sprintf_s(buf, "G01X%.3fY%.3f\n", point.x(), point.y());
     break;
    default:
     break;

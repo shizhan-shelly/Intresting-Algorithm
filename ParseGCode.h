@@ -1,7 +1,7 @@
 #include <vector>
 
 #include "./FittingMethod/D_Point.h"
-#include "GCodeType.h"
+#include "GCodeDefinition.h"
 
 // This is a tool class.
 class ParseGCode {

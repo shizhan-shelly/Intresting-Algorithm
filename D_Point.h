@@ -1,5 +1,5 @@
-#ifndef FITTINGMETHOD_DPOINT_H__
-#define FITTINGMETHOD_DPOINT_H__
+#ifndef FITTINGMETHOD_D_POINT_H__
+#define FITTINGMETHOD_D_POINT_H__
 
 class D_Point {
  public:
@@ -21,4 +21,4 @@ class D_Point {
  
 }; // class D_Point
 
-#endif // FITTINGMETHOD_DPOINT_H__
+#endif // FITTINGMETHOD_D_POINT_H__
